@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RoomDatabase</string>
+    <string name="txt_logout">Logout</string>
+    <string name="txt_login">Login</string>
+    <string name="txt_home">Home</string>
+    <string name="txt_register">Register</string>
+    <string name="txt_password">Password</string>
+    <string name="txt_username">Username</string>
+    <string name="txt_title">Title</string>
+    <string name="txt_description">Description</string>
+    <string name="txt_admin">Admin</string>
+    <string name="txt_admin_home">Admin Home</string> 
+</resources>

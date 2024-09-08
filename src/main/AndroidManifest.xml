@@ -1,0 +1,57 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chronelab.roomdatabase"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:name=".RoomApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RoomDatabase"
+        tools:targetApi="31">
+
+        <!-- Main Activity for your app, marked as launcher -->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.RoomDatabase">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Home Activity for post-login -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true"
+            android:label="@string/txt_home"
+            android:theme="@style/Theme.RoomDatabase" />
+
+        <!-- Register Activity for new users -->
+        <activity
+            android:name=".activity.RegistrationActivity"
+            android:exported="true"
+            android:label="@string/txt_register"
+            android:theme="@style/Theme.RoomDatabase" />
+
+        <!-- Admin Activity -->
+        <activity
+            android:name=".activity.Admin"
+            android:exported="true"
+            android:label="@string/txt_admin"
+            android:theme="@style/Theme.RoomDatabase" />
+
+        <!-- Admin Home Activity -->
+        <activity
+            android:name=".activity.AdminHome"
+            android:exported="true"
+            android:label="@string/txt_admin_home"
+            android:theme="@style/Theme.RoomDatabase" />
+
+    </application>
+</manifest>
